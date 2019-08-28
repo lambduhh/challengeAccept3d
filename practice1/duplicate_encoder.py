@@ -20,7 +20,7 @@ def duplicate(
 
 def print_res(t: tuple) -> None:
     (word, dup) = t
-    s = ""              # based on prior category, print_res encodes into string and prints results
+    s = ""              # based on prior (even or odd) category, print_res encodes into string and prints the results
     for letter in word:
         if letter in dup:
             s = s + ")"

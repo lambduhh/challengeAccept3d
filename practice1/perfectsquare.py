@@ -23,13 +23,13 @@ def is_square(n):
     try:
         x = math.sqrt(n)
     except ValueError as result:
-        return n, result       # return a neg number, a ValueError
+        return n, result  # return a neg number, a ValueError
     else:
         if could_be_int(x):
             result = True
-            return n, result    # is a perfectsq, returns n, result =True
+            return n, result  # is a perfect sq, returns n, result =True
     result = False
-    return n, result     # n is not a perfectsq, returns n, result= False
+    return n, result  # n is not a perfect sq, returns n, result= False
 
 
 if __name__ == '__main__':

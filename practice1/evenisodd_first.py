@@ -57,7 +57,7 @@ def check_list(l):
         position = nl.index('odd') + 1  # finds position of odd one out
     else:
         position = nl.index('even') + 1
-    return nl, position, l, categorize(nl)  # returns data to pass to print res
+    return nl, position, l, categorize(nl)  # returns data to pass to print result
 
 
 if __name__ == '__main__':

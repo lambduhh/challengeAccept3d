@@ -1,14 +1,11 @@
-# # Given an array of integers, find the sum of its elements.
-# Input Format
-# The first line contains an integer, , denoting the size of the array.
-# The second line contains  space-separated integers representing the array's elements.
-# Output Format
+# # Given an string of integers, find the sum of its elements.
+
 #
 # Print the sum of the array's elements as a single integer.
 
 
 def simplearraysum(y):
-    l = y.split()
+    l = y.split()  # type conversion  str-> list of ints
     ml = list(map(int, l))
     summ = sum(ml)
     return summ

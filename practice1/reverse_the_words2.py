@@ -10,7 +10,7 @@
 def reverse_phrase(quote):
     l = str.split(quote)
     nl = []
-    for words in reversed(l):
+    for words in reversed(l):   # reverse the list then append and join to new list
         nl.append(words)
     return ' '.join(nl)
 

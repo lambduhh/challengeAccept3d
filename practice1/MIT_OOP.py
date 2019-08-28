@@ -1,4 +1,4 @@
-# Object Oriented Programming a lecture from Dr. Ana from MIT avalible under Creative Commons
+# Object Oriented Programming a lecture from Dr. Ana from MIT avalible under Creative Commons on Youtube
 
 # creating a class and defining it's type
 # an object that defines a point in an (x,y) plane

@@ -49,7 +49,7 @@ def found_even(nums):
     return False
 
 
-def categorize(nl):  # cat picks the right fn to use to find position
+def categorize(nl):  # categorize picks the right fn to use to find position
     e = []
     o = []
     for n in nl:
