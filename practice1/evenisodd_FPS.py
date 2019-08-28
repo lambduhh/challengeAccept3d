@@ -18,9 +18,9 @@
 # higher order functions and functional thought processes
 
 
-def print_results(r: tuple) -> None:
-    ff, which = r
-    print("I have", which, "in position", ff)
+def print_results(r: tuple) -> None:   # r: will be a tuple -> this fn returns None
+    ff, which = r                      # r is a tuple of ff, and which
+    print("I have", which, "in position", ff)  # the ONLY print statement in the code
     return None
 
 
@@ -58,9 +58,9 @@ def categorize(nl):  # cat picks the right fn to use to find position
         else:
             o.append(n)
     if len(e) == 1:
-        return found_odd
+        return found_odd  # refer to found_odd fn
     else:
-        return found_even
+        return found_even  # refer to found_even fn
 
 
 def check_list(l):

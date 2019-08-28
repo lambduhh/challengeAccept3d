@@ -23,40 +23,41 @@ list_is_odd = "Most of this list is odd"
 list_is_even = "Most of this list is even"
 
 
-def print_results(r: tuple) -> None:
-    (nl, position, l, cat) = r
-    print(cat, "but the number in position", position, "is not")
+def print_results(r: tuple) -> None:  # r will be a tuple, the fn will return None
+    (nl, position, l, cat) = r  # the data in the tuple that is r
+    print(cat, "but the number in position", position,
+          "is not")  # only one print statement in all of the code = clean code
     return None
 
 
-def even_or_odd(n):
+def even_or_odd(n):  # even_or_odd uses good ole modulo to figure out if a number is even or odd
     if (n % 2) == 0:
-        return "even"
+        return "even"  # use of return statements, not print statements
     else:
         return "odd"
 
 
-def categorize(nl):
-    e = []
-    o = []
+def categorize(nl):  # aggregates data
+    e = []  # this will be a list of even numbers
+    o = []  # list of odd numbers
     for n in nl:
         if n == 'even':
-            e.append(n)
+            e.append(n)  # adds even numbers to appropriate list
         else:
             o.append(n)
-    if len(e) == 1:
+    if len(e) == 1:  # determines which list is longer
         return list_is_odd
     else:
         return list_is_even
 
 
 def check_list(l):
-    nl = list(map(even_or_odd, l))
+    nl = list(map(even_or_odd, l))  # applys even_or_odd fn to list
     if categorize(nl) == list_is_even:
-        position = nl.index('odd') + 1
+        position = nl.index('odd') + 1  # finds position of odd one out
     else:
         position = nl.index('even') + 1
-    return nl, position, l, categorize(nl)
+    return nl, position, l, categorize(nl)  # returns data to pass to print res
 
 
 if __name__ == '__main__':
