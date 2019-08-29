@@ -49,7 +49,7 @@ def calculate_leap_year(yd):
     return {**yd, "leap-year?": leap}
 
 
-def render_res(yd: dict) -> None:  
+def render_res(yd: dict) -> None:
     print(yd['leap-year?'])
     return None
 
