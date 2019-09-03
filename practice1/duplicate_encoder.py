@@ -2,20 +2,7 @@
 # each character in the new string is "(" if that character appears only once in the
 # original string, or ")" if that character appears more than once in the original
 # string. Ignore capitalization when determining if a character is a duplicate.
-
-
-def duplicate(
-        word):  # aggregate data by determining whether a letter is a single or duplicate and placing in appropriate list
-    single = []
-    dup = []
-    letters = list(word)
-    for letter in letters:
-        if letter not in single:
-            single.append(letter)
-        else:
-            dup.append(letter)
-
-    return dup
+from practice1.utils import duplicate
 
 
 def print_res(t: tuple) -> None:
